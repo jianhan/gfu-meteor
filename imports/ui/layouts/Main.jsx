@@ -11,6 +11,7 @@ import {
 import AppSwitcherIcon from "@atlaskit/icon/glyph/app-switcher";
 
 import GlobalNavigation from "@atlaskit/global-navigation";
+import { Link } from "react-router-dom";
 
 const AppSwitcherComponent = props => (
   <GlobalItem
@@ -40,7 +41,7 @@ const Global = () => (
 );
 
 // App component - represents the whole app
-export default class App extends Component {
+export default class Main extends Component {
   render() {
     return (
       <Page>
@@ -53,6 +54,8 @@ export default class App extends Component {
             <div css={{ padding: "32px 40px" }}>
               <Grid>
                 <GridColumn medium={8}>
+                  <Link to="/about-us">About Us</Link>
+                  <a href="{{pathFor 'pages.about-us' }}" title="test" />
                   {this.props.content}
                   <h1>Main heading</h1>
                   <p>
