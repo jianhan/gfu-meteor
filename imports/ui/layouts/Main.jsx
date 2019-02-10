@@ -4,6 +4,7 @@ import Page, { Grid, GridColumn } from "@atlaskit/page";
 import { LayoutManager, NavigationProvider } from "@atlaskit/navigation-next";
 import { Link } from "react-router-dom";
 import Global from "./GlobalNavigation";
+import BlazeTemplate from "../components/BlazeTemplate";
 
 // App component - represents the whole app
 export default class Main extends Component {
@@ -21,6 +22,8 @@ export default class Main extends Component {
                 <GridColumn medium={12}>
                   <Link to="/about-us">About Us</Link>
                   <a href="{{pathFor 'pages.about-us' }}" title="test" />
+                  <BlazeTemplate name="atForm" />
+                  <AccountsUIWrapper />
                   {this.props.content}
                 </GridColumn>
               </Grid>
