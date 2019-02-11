@@ -3,15 +3,10 @@ import { withTracker } from "meteor/react-meteor-data";
 import Avatar from "./Avatar";
 
 const AvatarContainer = withTracker(() => {
-  const returnObj = {
-    user: null
+  console.log(Meteor.user());
+  return {
+    user: Meteor.user()
   };
-
-  Meteor.call("getLoggedInNameAndEmail", (err, nameAndEmail) => {
-    returnObj.user = nameAndEmail;
-  });
-
-  return returnObj;
 })(Avatar);
 
 export default AvatarContainer;

@@ -5,31 +5,18 @@ import PropTypes from "prop-types";
 export default class Avatar extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      userData: null
-    };
   }
+
   render() {
-    let username = "";
-    if (this.state.userData) {
-      username = this.state.userData.username;
+    let name = "";
+    if (this.props.userData) {
+      name = this.props.userData.profile.name;
     }
 
-    return <p>{username}</p>;
-  }
-
-  componentWillMount() {
-    Meteor.call("getLoggedInNameAndEmail", (err, userData) => {
-      if (err) {
-        console.log(err);
-      } else {
-        this.setState({ userData });
-      }
-    });
+    return <p>{name}</p>;
   }
 }
 
 Avatar.propTypes = {
-  user: PropTypes.object
+  userData: PropTypes.object
 };
