@@ -6,6 +6,7 @@
     "test": "meteor test --once --driver-package meteortesting:mocha"
   },
   "dependencies": {
+    "@atlaskit/avatar": "^14.1.8",
     "@atlaskit/badge": "^9.2.2",
     "@atlaskit/css-reset": "^3.0.5",
     "@atlaskit/global-navigation": "^5.5.3",

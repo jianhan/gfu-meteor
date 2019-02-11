@@ -3,6 +3,7 @@ import GlobalNavigation from "@atlaskit/global-navigation";
 import AppSwitcherIcon from "@atlaskit/icon/glyph/app-switcher";
 import { GlobalItem } from "@atlaskit/navigation-next";
 import EmojiAtlassianIcon from "@atlaskit/icon/glyph/emoji/atlassian";
+import AccountsUIWrapper from "../components/AccountsUIWrapper";
 
 const AppSwitcherComponent = props => (
   <GlobalItem

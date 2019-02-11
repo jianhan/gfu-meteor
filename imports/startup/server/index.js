@@ -14,3 +14,4 @@ ServiceConfiguration.configurations.upsert(
 
 import "./fixtures.js";
 import "./register-api.js";
+import "./methods/auth.js";
