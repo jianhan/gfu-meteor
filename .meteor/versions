@@ -114,8 +114,8 @@ tracker@1.2.0
 twitter-oauth@1.2.0
 underscore@1.0.10
 url@1.2.0
+useraccounts:bootstrap@1.14.2
 useraccounts:core@1.14.2
-useraccounts:unstyled@1.14.2
 webapp@1.7.2
 webapp-hashing@1.0.9
 weibo-oauth@1.2.1
