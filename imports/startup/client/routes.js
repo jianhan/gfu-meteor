@@ -3,7 +3,7 @@ import { Router, Route, Switch } from "react-router";
 import createBrowserHistory from "history/createBrowserHistory";
 
 // route components
-import App from "../../ui/layouts/Main";
+import Main from "../../ui/layouts/Main";
 import Home from "../../ui/pages/Home";
 import AboutUs from "../../ui/pages/AboutUs";
 
@@ -19,7 +19,7 @@ const routes = (
 export const renderRoutes = () => (
   <Router history={browserHistory}>
     <Switch>
-      <App content={routes} />
+      <Main content={routes} />
     </Switch>
   </Router>
 );
